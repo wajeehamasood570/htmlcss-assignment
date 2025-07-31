@@ -148,34 +148,33 @@ img, iframe, video {
     font-weight: 400;
 }
 
-
 .custom-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0rem 0;
+  margin: 2rem 0;
 }
 
 .custom-divider::before,
 .custom-divider::after {
   content: "";
   flex: 1;
-  gap: 10px!important;
-  height: 10px; /* Broad line */
+  height: 10px;
   background: linear-gradient(to bottom, #ffffff 50%, orange 50%);
   border-radius: 5px;
 }
 
 .custom-divider::before {
-  margin-right: 15px;
+  margin-right: 30px; /* space before button */
 }
 
 .custom-divider::after {
-  margin-left: 15px;
+  margin-left: 30px;  /* space after button */
 }
 
-
 .custom-divider > button {
-  margin-top: 40px;
-  margin-bottom: 10px;
+  padding: 12px 20px;
+  font-weight: 600;
+  margin-top: 0; /* vertically centered */
+  margin-bottom: 0;
 }
